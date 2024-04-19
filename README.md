@@ -2,7 +2,7 @@
 
 ## Distribution switch notice
 
-According to [Debian Wiki](https://wiki.debian.org/DebianReleases), Debian bullseye will reach its end-of-life date in July 2024. Therefore, the project will switch to Debian bookworm as the packaging environment in June 2024.
+According to [Debian Wiki](https://wiki.debian.org/DebianReleases), Debian bullseye will reach its end-of-life date in July 2024. Therefore, the project has switched to Debian bookworm as the packaging environment.
 
 ## Table of Contents
 
@@ -27,7 +27,7 @@ According to [Debian Wiki](https://wiki.debian.org/DebianReleases), Debian bulls
 Run following commands.
 
 ```bash
-wget https://github.com/ononoki1/nginx-http3/releases/latest/download/nginx.deb
+wget https://github.com/Thaman-N/nginx-http3/releases/latest/download/nginx.deb
 sudo apt install ./nginx.deb
 ```
 
