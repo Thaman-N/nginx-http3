@@ -42,7 +42,7 @@ sed -i 's|--sbin-path=/usr/sbin/nginx|--sbin-path=/usr/sbin/nginx --add-module=$
 sed -i 's|--user=nginx --group=nginx|--user=www-data --group=www-data|g' rules
 sed -i 's|--with-compat||g' rules
 sed -i 's|--with-http_addition_module --with-http_auth_request_module --with-http_dav_module --with-http_flv_module --with-http_gunzip_module --with-http_gzip_static_module --with-http_mp4_module --with-http_random_index_module --with-http_realip_module --with-http_secure_link_module --with-http_slice_module --with-http_ssl_module --with-http_stub_status_module --with-http_sub_module|--with-http_ssl_module|g' rules
-sed -i 's|--with-mail --with-mail_ssl_module --with-stream --with-stream_realip_module --with-stream_ssl_module --with-stream_ssl_preread_module|--with-pcre-jit --with-select_module --with-poll_module --with-http_upstream_zone_module --with-openssl=$(CURDIR)/debian/modules/openssl|g' rules
+sed -i 's|--with-mail --with-mail_ssl_module --with-stream --with-stream_realip_module --with-stream_ssl_module --with-stream_ssl_preread_module|--with-pcre-jit --with-select_module --with-poll_module --with-openssl=$(CURDIR)/debian/modules/openssl|g' rules
 cd ..
 dpkg-buildpackage -b > /dev/null 2>&1
 cd ..
